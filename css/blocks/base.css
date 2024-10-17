@@ -1,0 +1,51 @@
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat-Bold.ttf);
+  font-weight: bold;
+}
+
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+:root {
+  --mainColor: #b6a3df;
+  --primaryColor: #52c5cc;
+  --fontColor: #ffb800;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--mainColor);
+}
+
+.hero {
+  --mainColor: red;
+  background-color: var(--mainColor);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1{
+  color:#52c5cc
+};
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
