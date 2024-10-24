@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Stepashka">
+  <title>справка</title>
+  <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-          <a href="/">
-            <img src="img/mem.png" width="100" height="100px" />
-          </a>
-        </div>
-        <div class="menu">
-        </div>
-        <div class="tel">
-        </div>
-      </header>
+  <!-- подключ css js -->
+  <a href="#buttop">вниз стр</a><!--скролинг вниз-->
+  <h1>Заго<small>small</small><big>big</big>ловок1</h1>
+  <h2>Заголовок2</h2>
+  <h3>Заголовок3</h3><a name="buttop"></a>
+  <h4>Заголовок4</h4>
+  <h5>Заголовок5</h5>
+  <h6>Заголовок6</h6>
+  <pre>c сохранением всех
+    отступов
+  </pre>
+  <code>sudo</code>
+  <p><b>тект жирный</b></p><!-- strong -->
+  <p><em>тект курсив</em></p>
+  <p><strike>перечеркнутый</strike></p>
+  <p>H<sub>2</sub>O</p>
+  <br><hr>
+  <p>a<sup>3</sup></p>
+  <abbr title="html">HTML</abbr>
+  <address>seatle, usa</address>
+  <ol start="4" type="I"><!-- пронумерованный список  -->
+    <li>gggg</li>
+  </ol>
+  <ul type="circle">
+    <li>sdfghjk</li>
+  </ul>
+  <p title="some">text</p>
+  <a target="_blank" href="index.html">ссылка</a> <!--тег таргет определяет где откроется ссылка-->
+  <!-- <a name="buttop"></a>  -->
+
+  <div>просто текс</div><!--просто создает блок-->
+  <div>просто текс</div>
+  <span>string</span><!--строчный блок-->
+  <span>string</span>
+
+  <form action="" method="post"><!--action куда отправлять данные-->
+    <label for="user_name">введите имя</label>
+    <input type="text" placeholder="введите то-то" value="по умол"
+    maxlength="10" name="user_name" id="user_name"><!--hidden невиден и disabled нельзя вводить и readonly-->
+    <br>
+    <input type="password"><br>
+    <input type="email"><br>
+    <input type="url"><br>
+    <input type="color"><br>
+    <input type="date"><br>
+    <input type="time"><br>
+    <input type="datetime"><br>
+    <input type="checkbox"><br>
+    <input type="radio" name="st"><input type="radio" name="st"><br>
+    <input type="file"><br><br>
+
+    <input type="submit" value="отправлять">
+    <input type="reset" value="reset"><br><br>
+
+    <textarea>ntttttt</textarea><!--required обяз поле-->
+    <br><br>
+    <button type="reset">reset as button</button>
+    <br><br>
+    <select size="2"><!--multiple несколько вариантов-->
+      <option disabled selected>----</option>
+      <option>dddd</option>
+      <option>ddhhhhdd</option>
+      <option>ggggg</option>
+    </select>
+  </form>
+  <br><br>
+  <!--спец html5 теги-->
+  <header>шапка</header>
+  <main>основная часть сайта</main>
+  <aside>боковая часть</aside>
+  <footer>подвал</footer>
+
+  <progress max="100" value="50">если не виден тег</progress>
+  <details>
+    <summary>подробнее</summary>
+    вспомог текст
+  </details>
+  <!-- тестирование в разных браузерах -->
+
+<script src="js/main.js"></script>
 </body>
 </html>
