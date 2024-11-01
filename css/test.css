@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Chokokutai&family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 3000px;
+}
+
+#some {
+    background-color: aqua;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    float: left;
+}
+
+#header, #footer {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-bottom: 4px solid black;
+    background-color: #ccc;
+    color: #fff;
+    line-height: 50px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+/* Vector */
+
+/* position: absolute;
+left: 93.85%;
+right: 2.76%;
+top: 1.72%;
+bottom: 91.68%;
+
+background: #122A2F;
+border: 2px solid #122A2F; */
+/* место под лого */
+
+/* position: absolute;
+width: 129px;
+height: 75px;
+left: calc(50% - 129px/2 - 845.5px);
+top: calc(50% - 75px/2 - 443.5px);
+
+background: #E0F4F5; */
+
+
+
+#nav {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#nav li{
+    display: inline;
+    background-color: #aca;
+    border: 2px solid silver;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+#nav li:hover {
+    color: aquamarine;
+}
+
+#nav li:not(:last-of-type){
+    margin-right: 10px;
+}
+
+#main {
+    width: 50%;
+    margin: 5%;
+    background-color: #aca;
+    border: 0px solid blue;
+    padding: 15px 2.5%;
+    float:left;
+    position: relative;
+    z-index: 1;
+}
+
+#aside {
+    width: 20%;
+    padding: 15px 2.5%;
+    margin-left: 5%;
+    background-color: #aca;
+    border: 0px solid blue;
+    float: left;
+    position: relative;
+    /* top: -10px; */
+    bottom: -10px;
+    left: -200px;
+    z-index: 0;
+}
+
+#footer {
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-bottom: 0;
+    border-top: 4px solid black;
+}
+
+
+
+/* 
+.block1 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: aqua;
+}
+
+#first1 {
+    float:right;
+}
+
+#second2 {
+    background-color: blue;
+    float: left;
+}
+
+.block {
+    background-color: blueviolet;
+    height: 200px;
+    width: 150px;
+    border: 6px dashed red;
+    border-bottom: 0;
+    border-top-style: solid;
+    border-left-style: double;
+
+    border-radius: 15px 50px 0px 100px;
+    opacity: 0.7;
+    margin: 40px;
+    padding: 20px;
+
+    display: block;
+}
+
+#first {
+    /* background-color:rgb(228, 193, 146);
+    background-image: url('../img/mem.png');
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* background: rgb(228, 193, 146) 
+    url('../img/mem.png') no-repeat center top;
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+/* #second {
+    height: 250px;
+}
+
+.ppp {
+    color: #000;
+    text-align: center;
+    /* font-size: 23px; */
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    /* font-family: "Dancing Script", cursive;
+    text-transform:uppercase;
+    word-spacing: 20px;
+    letter-spacing: -4px;
+    line-height: 50px;
+    cursor: copy;
+    text-decoration: line-through;
+}
+
+.dancing-script-ppp {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+} */
+/* 
+
+#sometext::after {
+    content: attr(title);
+    color: brown;
+    
+}
+
+.main_link{
+    color:brown;
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+}
+
+.main_link:hover {
+    color:blue;
+    text-decoration: overline;
+    text-decoration-color: black;
+    cursor: crosshair;
+}
+
+.main-text {
+    color: blue;
+}
+
+#text_in_p{
+    color: aqua;
+}
+
+#text_in_p:active {
+    text-decoration: line-through;
+}
+
+div p b, div i {
+    color: blueviolet;
+}
+
+input {
+    color: aquamarine;
+}
+
+input:focus {
+    color: brown;
+} */ 
+
+/*div, .class, #id, div p i{
+    color: bisque;
+}*/
