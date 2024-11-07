@@ -7,7 +7,7 @@
 
 body {
     width: 100%;
-    height: 3000px;
+    height: 100%;
 }
 
 #some {
@@ -51,10 +51,62 @@ height: 75px;
 left: calc(50% - 129px/2 - 845.5px);
 top: calc(50% - 75px/2 - 443.5px);
 
+fr (от fraction — доля, часть) отвечает за свободное пространство внутри грид-контейнера.
+
+Например, этот код создаст три колонки, каждая из которых будет занимать 1/3 ширины родителя:
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 background: #E0F4F5; */
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 1fr 90px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    min-height: 100vh;
+        
+        /* .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 2 / 1 / 3 / 2; }
+        .div3 { grid-area: 3 / 1 / 4 / 2; } */
+        
+}
 
+header {
+    /* grid-column-start: 1 ;
+    grid-column-end: -1; */
+    grid-area: 1 / 1 / 2 / -1;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.fle {
+    width: 100px;
+    height: 70px; 
+    background-color: aquamarine;
+    order: 1;
+}
+main {
+    grid-area: 2 / 1 / 3 / -1;
+    /* grid-column: 1/2;
+    grid-row: 2/5; */
+    background-color: rgb(32, 122, 32);
+    /* max-height: max-content; */
+    /* height: 100%; */
+}
+footer {
+    /* grid-column: 1/2;
+    grid-row-start: 5; */
+    grid-area: 3 / 1 / 4 / -1;
+    background-color: bisque;
+    /* height: 40px; */
 
+}
 #nav {
     list-style: none;
     display: block;
@@ -238,3 +290,38 @@ input:focus {
 /*div, .class, #id, div p i{
     color: bisque;
 }*/
+
+/* body, html {
+    height:100%;
+    width: 100%;
+    }
+    body {
+      display: grid;
+      grid-template-areas: "header header" "nav article ";
+      grid-template-columns: 200px 1fr;
+      margin: 0;
+    }
+    
+    header,
+    footer,
+    article,
+    nav,
+    div {
+      padding: 20px;
+      
+    }
+    
+    #pageHeader {
+      grid-area: header;
+      background: gold;
+    }
+    
+    #mainArticle {
+      grid-area: article;
+      background: blue;
+    }
+    
+    #mainNav {
+      grid-area: nav;
+      background: green;
+    } */

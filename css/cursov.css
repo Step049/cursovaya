@@ -1,0 +1,142 @@
+@import url(blocks/normalize.css);
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "ManropeMedium";
+    src: url(../../fonts/Manrope-Medium.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ManropeLight";
+    src: url(../../fonts/Manrope-Light.ttf);
+    font-weight: light;
+}
+
+
+@font-face {
+    font-family: "ManropeNormal";
+    src: url(../fonts/Manrope-Regular.ttf);
+    font-weight: normal;
+}
+
+
+body {
+    background-color: #f7feff;
+    color: #122A2F;
+    font-family: 'ManropeNormal';
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    background-color: #A7D1D2;
+    margin-bottom: 20px;
+    /* position: fixed; */
+    /* float: left; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+#logo {
+    background-color: #E0F4F5;
+    width: 90px;
+    height: 55px;
+    border-radius: 50%;
+    /* margin-top: 10px; */
+    margin-left: 20px; 
+    flex: start;
+    /* float: left; */
+    
+}
+
+#logo_text {
+    text-align: center;
+    line-height: 55px;
+    font-size: 35px;
+    font-family: 'ManropeMedium';
+  
+    /* здесь проверить флекс или грид */
+}
+
+nav p {
+    /* margin-top: 20px; */
+    margin-left: 2px; 
+    font-size: 30px;
+    font-family: 'ManropeMedium';
+    /* float: left; */
+    /* flex: auto; */
+}
+
+nav p:first-of-type{
+    margin-left: 10px;
+}
+
+#tochki {
+    height: 40px;
+    /* float: right; */
+    margin-top: 15px;
+}
+
+#book {
+    height: 45px;
+    /* float: right; */
+    margin-top: 13px;
+    margin-right: 20px;
+}
+
+aside {
+    margin-left: 20px;
+    /* float: left; */
+}
+
+aside li {
+    margin-bottom: 10px;
+    list-style: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+aside li:hover {
+    background-color: #E0F4F5;
+    border-radius: 20px;
+}
+
+
+main {
+    /* float: right; */
+    /* background-color: aqua; */
+    width: 60%;
+    /* height: 100%; */
+    margin-right: 15%;
+    /* position:relative; */
+    /* flex: 1 0 auto; */
+}
+
+main h3 {
+    font-family: 'ManropeMedium';
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 75px;
+    background-color: #015366;
+    margin-top: 30px;
+    /* float: left; */
+    /* flex: 0 0 auto; */
+}
+
+
