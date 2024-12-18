@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="cursovaya" content="width=device-width, initial-scale=1.0">
+    <title>Глава</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">
+                <symbol>
+                    <img src="/img/logo.svg" alt="logo">
+                </symbol>
+            </a>
+            <a href="home.html">
+            <span class="way_cut">/</span>
+            <span class="way">Знакомство с Linux</span>
+            </a>
+            <span class="way_cut">/</span>
+            <span class="way">Введение</span>
+            
+        </nav>
+        <div id="ikons-header">
+            <a href="#">
+                <img src="/img/tochki.png" id="tochki">
+            </a>
+            <a href="#">
+                <img src="/img/book.png" id="book">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <div id="soder">
+                <p>Содержание</p>
+                <button id="button" onclick="showHide('block_id', 'button')" class="button-off"></button>
+            </div>
+            <ul id="block_id">
+                <li><a href="#">Кратко</a></li>
+                <br>
+                <li><a href="#theme2">История</a></li>
+            </ul>
+            <hr>
+        </aside>
+       
+        <section id="content">
+            
+            <h3>Кратко</h3>
+            <p>Linux — это семейство операционных систем (ОС), работающих на основе одноименного ядра. Нет одной операционной системы Linux, как, например, Windows или MacOS. 
+                Есть множество <span class="vidno"><a href="slovar.html">дистрибутивов</a></span> (набор файлов, необходимых для установки ПО), выполняющих конкретные задачи. </p>
+            
+            <div class="code">
+                <code id="text1"><b>~$</b> sudo 1 code example</code>
+                <button onclick="copytext('#text1')" class="copy-butt"><img src="img/copy-link(1).png" class="img-copy-link"></button>
+            </div>
+<br><br>
+            <div class="code">
+                <code id="text2"><b>~$</b> sudo 2</code>
+                <button onclick="copytext('#text2')" class="copy-butt"><img src="img/copy-link(1).png" class="img-copy-link"></button>
+            </div>
+            
+            <h3 id="theme2">История</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, cupiditate? Veniam, esse doloremque nobis praesentium minus modi excepturi eligendi eaque at laboriosam commodi quaerat consectetur recusandae! Repudiandae tempore inventore repellendus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius recusandae ea vel cum magni porro, provident atque assumenda molestias maiores culpa suscipit non, illo amet, architecto esse animi. Exercitationem, vero. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, similique quasi debitis obcaecati eius aliquam sed, adipisci qui eaque ullam ratione unde quae beatae pariatur harum eos excepturi dicta. Distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi tenetur vel cupiditate vero. Aliquid exercitationem quae vitae facere, eaque odio nemo sapiente, illum eius impedit, commodi laudantium temporibus? Perspiciatis, autem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quis, placeat iusto, fugit fugiat cupiditate maxime quasi eum accusantium laborum, exercitationem dignissimos distinctio dicta! Odit molestias fuga excepturi harum quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam explicabo tenetur minima quis corporis ut, incidunt officiis impedit ab facere tempora possimus velit? Illo, labore tempore ab enim nostrum sunt.</p>
+            
+            <picture>
+                <img src="img/clownme.jpeg" alt="clown" class="picture"> 
+            </picture>
+            <div id="next-last">
+                <a href="#" id="last">
+                    <img src="img/left-arrow.png" class="arrows">
+                    <span>назад</span>
+                </a>
+                
+                <a href="#" id="next">
+                    <span>вперед</span>
+                    <img src="img/right-arrow.png" class="arrows">
+                </a>
+            </div>
+
+        </section>
+        
+    </main>
+   
+    <footer>
+        
+        <div>
+            <a href="#">
+                <img src="img/dark-mode.png" class="ikons-footer">
+            </a>
+        </div>
+        <div id="contacts">
+            <a href="#">
+                <img src="img/telegram.png" class="ikons-footer">
+            </a>
+            <a href="#">
+                <img src="img/twitter.png" class="ikons-footer">
+            </a>
+            <a href="#">
+                <img src="img/github.png" class="ikons-footer">
+            </a>
+            
+        </div>
+        
+        
+    </footer>
+
+
+    <script src="js/jquery-3.7.1.js" ></script>    
+    <script src="js/main.js"></script>
+</body>
+</html>

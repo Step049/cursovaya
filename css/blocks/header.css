@@ -1,6 +1,70 @@
-.header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
+header {
+  grid-area: 1 / 1 / 2 / -1;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  background-color: #A7D1D2; 
+  position: fixed;
+  height: 75px;
+  width: 100vw;
+}
+
+@media screen and (max-width: 700px) {
+
+  header {
+    position: relative;
   }
+  
+}
+
+
+nav {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1em;
+  gap: 0em 0.23em
+
+}
+
+.way, .way_cut {
+  font-size: 30px; 
+  font-family: 'ManropeMedium';
+}
+
+/* .way_cut{
+  margin
+} */
+
+
+@media screen and (max-width: 700px) {
+
+  
+  .way_cut::after {
+    content: "...";
+    /* margin-right: 0.23em; */
+  }
+  .way {
+    visibility: hidden;
+    display: none;
+  }
+  
+  
+}
+
+#ikons-header {
+  grid-area: 1 / 2 / 2 / 3; 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#tochki {
+  height: 40px;
+}
+
+#book, #home {
+  height: 45px;
+  margin-right: 1em;
+}

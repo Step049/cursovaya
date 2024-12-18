@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="cursovaya" content="width=device-width, initial-scale=1.0">
+    <title>Словарь</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- попробовать калк в контенте -->
+    <header>
+        <nav>
+            <a href="home.html">
+                <symbol>
+                    <img src="/img/logo.svg" alt="logo">
+                </symbol>
+            </a>
+            <a href="home.html">
+            <span class="way_cut">/</span>
+            <span class="way">Словарь</span>
+            </a>
+        </nav>
+        <div id="ikons-header">
+            <a href="#">
+                <img src="/img/tochki.png" id="tochki">
+            </a>
+            <a href="home.html">
+                <img src="/img/home.png" id="home">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <div id="soder">
+                <p>Содержание</p>
+                <button id="button" onclick="showHide('block_id', 'button')" class="button-off"></button>
+            </div>
+            <ul id="block_id">
+                <li><a href="#">А - З</a></li>
+                <br>
+                <li><a href="#theme2">И - П</a></li>
+                <br>
+                <li><a href="#theme3">Р - Ш</a></li>
+                <br>
+                <li><a href="#theme4">Щ - Я</a></li>
+            </ul>
+            <hr>
+        </aside>
+       
+        <section id="content">
+            <h3><span class="vidno">Д</span></h3>
+            <p><span class="vidno">Дистрибутив</span> – это комплект программного обеспечения, включающий файлы, архивы и другие необходимые компоненты для работы. Основная задача дистрибутива – предоставить пользователю готовую к работе программу, установку которой можно произвести без особых трудностей. Главная цель дистрибутива – упростить процесс инсталляции и  настройки ПО. Вместо того чтобы загружать и устанавливать каждую  программу по отдельности, пользователь может загрузить и установить один единственный дистрибутив, в котором уже содержатся все нужные  компоненты.</p>
+            <picture>
+                <img src="img/distributiv.png" alt="clown" class="picture"> 
+            </picture>
+            <div id="next-last">
+                <a href="#" id="last">
+                    <img src="img/left-arrow.png" class="arrows">
+                    <span>назад</span>
+                </a>
+                <a href="#" id="next">
+                    <span>вперед</span>
+                    <img src="img/right-arrow.png" class="arrows">
+                </a>
+            </div>
+        </section>
+    </main>
+   
+    <footer>
+        <div>
+            <a href="#">
+                <img src="img/dark-mode.png" class="ikons-footer">
+            </a>
+        </div>
+        <div id="contacts">
+            <a href="#">
+                <img src="img/telegram.png" class="ikons-footer">
+            </a>
+            <a href="#">
+                <img src="img/twitter.png" class="ikons-footer">
+            </a>
+            <a href="#">
+                <img src="img/github.png" class="ikons-footer">
+            </a>
+        </div>
+    </footer>
+  
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+  background: #ccc;
+}
+
+body:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  font-size: 40px;
+  background: rgba(#fff, 0.5);
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background: rgb(109, 167, 109);
+  }
+  body:after {
+    content: "desktop";
+  }
+  .container {
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    background: yellow;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+  }
+}
+body:after {
+  content: "laptop";
+}
+
+@media (max-width: 768px) {
+  body {
+    background: red;
+  }
+  body:after {
+    content: "tablets";
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background: purple;
+    margin: 0 auto;
+    width: calc(100% - 40px);
+  }
+  body:after {
+    content: "phones";
+  }
+}

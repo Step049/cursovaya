@@ -1,0 +1,46 @@
+body {
+    /* background-color: rgb(185, 241, 241); */
+}
+main{
+    display:flex;
+    justify-content: space-between;
+}
+
+.cart{
+    width: 20%;
+    height: 60px;
+    /* background-color: rgb(149, 234, 234); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart1{
+    background-color: rgb(185, 241, 241);
+}
+
+#cart2{
+    background-color: rgb(205, 209, 250);
+}
+
+#cart3{
+    background-color: rgb(250, 205, 227);
+}
+
+@media (min-width: 1000px) {
+    body{
+        background-color: rgb(250, 205, 227);
+    }
+}
+
+@media (max-width: 999px) {
+    body{
+        background-color: rgb(205, 209, 250);
+    }
+}
+
+@media (max-width: 500px) {
+    body{
+        background-color: rgb(185, 241, 241);
+    }
+}
